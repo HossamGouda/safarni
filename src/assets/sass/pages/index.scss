@@ -1,0 +1,53 @@
+.top-menu {
+  .navbar {
+    font-weight: bold;
+    padding: 0px 100px !important;
+    background-color: #fff !important;
+    .navbar-nav {
+      li > a {
+        transition-property: background-color;
+        transition-duration: 0.5s;
+
+        &:hover {
+          color: $main-color !important;
+          background-color: $custom-color;
+          border-bottom: 1px solid $main-color;
+        }
+      }
+
+      .active a {
+        color: $main-color !important;
+        border-bottom: 1px solid $main-color;
+      }
+    }
+    .navbar-brand {
+      .custom-brand {
+        width: 70px !important;
+        color: $color-red;
+      }
+    }
+  }
+}
+
+.icon-square {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  border-radius: 0.75rem;
+}
+
+.contact-us {
+  #contact-info {
+    svg {
+      color: $main-color;
+      margin-left: 5px;
+    }
+  }
+
+  input[type="email"] {
+    text-align: right;
+  }
+}
