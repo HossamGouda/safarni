@@ -1,8 +1,5 @@
 import "normalize.css";
 import "jquery/dist/jquery.js";
-// import "popper.js/dist/popper.min";
-// import "@popperjs/core";
-import "bootstrap";
 import "bootstrap/dist/js/bootstrap.js";
 import "bootstrap/dist/css/bootstrap.rtl.css";
 import "@fortawesome/fontawesome-free/js/all";
