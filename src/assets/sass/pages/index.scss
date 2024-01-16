@@ -1,7 +1,7 @@
 .top-menu {
   .navbar {
     font-weight: bold;
-    padding: 0px 100px !important;
+    padding: 0px 50px !important;
     background-color: #fff !important;
     .navbar-nav {
       li > a {
@@ -23,7 +23,6 @@
     .navbar-brand {
       .custom-brand {
         width: 70px !important;
-        color: $color-red;
       }
     }
   }
@@ -88,4 +87,11 @@
   input[type="email"] {
     text-align: right;
   }
+  .custom-copy-right{
+    color: $main-color;
+  }
+}
+
+@media (min-width: 375px) {
+  
 }
