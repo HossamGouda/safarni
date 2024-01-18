@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.rtl.css";
 import "@fortawesome/fontawesome-free/js/all";
 import "./assets/sass/styles.scss";
 import $ from "jquery";
+import './assets/js/login'
 
 $(function () {
   var currentYear = new Date().getFullYear();
