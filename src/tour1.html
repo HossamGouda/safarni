@@ -4,7 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>سفرني</title>
-  <script defer src="main.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+    <style>
+      @keyframes myAnimation {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }
+    
+      .masked-image {
+        animation: myAnimation 6s infinite;
+      }
+    
+      .clip-svg {
+        clip-path: url(#svg-shaped_masked_image);
+        -webkit-clip-path: url(#svg-shaped_masked_image);
+      }
+    </style>
+
+  </head>
   <body>
     <div class="container-fluid">
       <section class="top-menu">
@@ -12,7 +29,7 @@
           <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 bg-body-tertiary py-2 fixed-top">
             <div class="container">
               <a href="index.html" class="navbar-brand p-0">
-                <img src="./assets/fonts/logo.svg" class="custom-brand" alt=" شركة سفرني للسياحة" />
+                <img src="./assets/images/logo/logo.svg" class="custom-brand" alt=" شركة سفرني للسياحة" />
                 سفرني
               </a>
       
@@ -53,9 +70,9 @@
           </nav>
         </div>
       </section>
-      <section class="hero">
-        <div class="container px-4 py-5 ">
-          <div class="row flex-lg-row-reverse align-items-center g-5 custom-hero-content">
+      <section>
+        <div class="container px-4 py-5">
+          <div class="row row flex-lg-row-reverse align-items-center g-5 custom-hero-content">
             <div class="col-md-12 col-lg-6">
               <svg class="clip-svg" viewBox="0 0 700 457">
                 <defs>
@@ -63,7 +80,7 @@
                     <path vector-effect="non-scaling-stroke" fill="black" d="M212.6789,0.0971 C319.172,-2.9848 719.1934,71.5392 615.5109,328.1314 C511.8284,584.7236 250.3161,624.2746 112.9546,568.0614 C-24.407,511.8482 -12.011,229.8713 23.5955,138.102 C59.2019,46.3327 106.1857,3.1791 212.6789,0.0971 Z" pathdata:id="M362.5,4 C487,4 631,-44 631,201.5 C631,447 538,623.5 310.5,581.5 C83,539.5 -29.917,266.627 7,156.5 C43.917,46.373 238,4 362.5,4 Z;M370,18 C494.5,18 627,-56.5 627,189 C627,434.5 405.5,573.5 155.5,581 C-94.5,588.5 23.083,175.127 60,65 C96.917,-45.127 245.5,18 370,18 Z"></path>
                   </clipPath>
                 </defs>
-                <image xlink:href="./assets/images/hero.jpg" x="0" y="0" width="700" height="457" clip-path="url(#svg-shaped_masked_image)" class="masked-image" />
+                <image xlink:href="./assets/images/hero/hero.jpg" x="0" y="0" width="700" height="457" clip-path="url(#svg-shaped_masked_image)" class="masked-image" />
               </svg>
             </div>
             <div class="col-md-12 col-lg-6">
@@ -91,120 +108,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
-        <div class="row px-5">
-          <div class="container px-3 py-3" id="hanging-icons">
-            <h2 class="pt-3 border-top text-center">خدماتنا</h2>
-            <div class="row g-4 py-5  px-md-4 px-sm-2">
-              <div
-                class="col-md-6 d-flex align-items-sm-center align-items-start px-sm-2 px-md-5">
-                <div class="icon-square flex-shrink-0 me-3">
-                  <i class="fa-solid fa-hotel custom-color"></i>
-                </div>
-                <div>
-                  <h2>حجز سكن</h2>
-                  <p class="">
-                    نقدم لكم خدمة الحجوزات في أفضل الفنادق والشقق ذات الإطلالة
-                    الرائعة والقريبة من جميع الخدمات.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="col-md-6 d-flex align-items-sm-center align-items-start px-sm-2 px-md-5">
-                <div class="icon-square flex-shrink-0 me-3">
-                  <i class="fa-solid fa-car custom-color"></i>
-                </div>
-                <div>
-                  <h2>حجز سيارة</h2>
-                  <p>
-                    نقدم لكم خدمة حجز السيارات سواءً سيارات الأوتوماتيك أو
-                    السيارات العادي<div class=""></div>
-                  </p>
-                </div>
-              </div>
-              <div
-                class="col-md-6 d-flex align-items-sm-center align-items-start px-sm-2 px-md-5">
-                <div class="icon-square flex-shrink-0 me-3">
-                  <i class="fa-regular fa-face-smile custom-color"></i>
-                </div>
-                <div>
-                  <h2> جولات سياحية</h2>
-                  <p>
-                    جولات سياحية خاصة مع أمهر السائقين كما نقدم جولات جماعية بأحدث الباصات مع أفضل المرشدين السياحيين الذين يُجيدون اللغة العربية ولإنجليزية.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="col-md-6 d-flex align-items-sm-center align-items-start px-sm-2 px-md-5">
-                <div class="icon-square flex-shrink-0 me-3">
-                  <i class="fa-solid fa-plane-arrival custom-color"></i>
-                </div>
-                <div>
-                  <h2> الاستقبال من المطار</h2>
-                  <p>
-                    نقدم لكم خدمة الاستقبال من المطار وتوديعكم في المطار بحيث يكون مندوبنا متواجد دائمًا في خدمتكم أثناء وصولكم أو ذهابكم للمطار مع أفضل وسائل النقل.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="tour text-center">
-        <div class="container">
-          <h2 class="pt-3 border-top text-center mb-5 ">الجولات السياحيةالخاصة</h2>
-          <div class="row mt-3 custom-card-holder cols-sm-1 cols-md-2 row-cols-lg-4">
-            <div class="col d-flex mb-2 mb-md-2 justify-content-center">
-              <div class="card" style="width: 18rem;">
-                <img src="./assets/images/francois-le-nguyen-VsY4IUi44Zo-unsplash.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">جولة سياحية الي القاهرة</h5>
-                  <p class="card-text">جولة سياحية الي القاهرة لمدة اسبوع سنزور فيها الكثير من المعالم التاريخية والاثار الفرعونية .</p>
-                  <p class="card-text text-muted">السعر 500ريال</p>
-                  <a href="/tour1.html" class="btn btn-primary">اعرف المزيد</a>
-                </div>
-              </div>
-            </div>
-            <div class="col d-flex mb-2 mb-md-2 justify-content-center">
-              <div class="card" style="width: 18rem;">
-                <img src="./assets/images/osman-koycu-c6qF_lYvu2I-unsplash.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">جولة سياحية الي تركيا</h5>
-                  <p class="card-text">
-                    <p class="card-text">جولة سياحية الي تركيا لمدة اسبوع سنزور فيها الكثير من المعالم التاريخية الشواطئ الجميلة .</p>
-                    <p class="card-text text-muted">السعر 500ريال</p>
 
-                  <a href="#" class="btn btn-primary">اعرف المزيد</a>
-                </div>
-              </div>
-            </div>
-            <div class="col d-flex mb-2 mb-md-2 justify-content-center">
-              <div class="card" style="width: 18rem;">
-                <img src="./assets/images/francois-le-nguyen-VsY4IUi44Zo-unsplash.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">جولة سياحية الي القاهرة</h5>
-                  <p class="card-text">جولة سياحية الي القاهرة لمدة اسبوع سنزور فيها الكثير من المعالم التاريخية والاثار الفرعونية .</p>
-                  <p class="card-text text-muted">السعر 500ريال</p>
-                  <a href="#" class="btn btn-primary">اعرف المزيد</a>
-                </div>
-              </div>
-            </div>
-            <div class="col d-flex mb-2 mb-md-2 justify-content-center">
-              <div class="card" style="width: 18rem;">
-                <img src="./assets/images/osman-koycu-c6qF_lYvu2I-unsplash.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">جولة سياحية الي تركيا</h5>
-                  <p class="card-text">
-                    <p class="card-text">جولة سياحية الي تركيا لمدة اسبوع سنزور فيها الكثير من المعالم التاريخية الشواطئ الجميلة .</p>
-                    <p class="card-text text-muted">السعر 500ريال</p>
-
-                  <a href="#" class="btn btn-primary">اعرف المزيد</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <footer class="custom-footer mt-3">
         <div class="container ">
           <div class="row py-md-5 my-md-5 border-top">

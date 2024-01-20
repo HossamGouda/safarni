@@ -7,9 +7,10 @@
     <meta
       name="author"
       content="Hossam Gouda" />
-    <title>سفرني | تسجيل الدخول</title>
+    <title>سفرني | تسجيل حساب جديد</title>
+
   </head>
-  <body>
+  <body >
     <div class="container-fluid">
       <section class="top-menu ">
         <div class="row">
@@ -47,7 +48,8 @@
                   </a>
                   </li>
                   <li class="nav-item p-2">
-                    <a class="btn btn-outline-secondary btn-lg px-4" href="/register.html" >
+                    <a 
+                      class="btn btn-outline-secondary btn-lg px-4">
                       انشاء حساب جديد
                   </a>
                   
@@ -58,54 +60,80 @@
           </nav>
         </div>
       </section>
-      <section >
-        <div class="container py-5">
+
+      <section>
+        <div class="container py-2">
           <div class="row align-items-center justify-content-around">
             <div class="form-content g-5 pt-md-5 text-center">
               <img
               class="mb-3 img-fluid text-center"
-              src="./assets/images/login/login.svg"
+              src="./assets/images/register/register.svg"
               alt="" />
-            <h1 class="h3 mb-2 fw-normal">اكتب بيانات تسجيل الدخول</h1>
+            <h1 class="h3 mb-2 fw-normal">اكتب بيانات تسجيل حساب جديد</h1>
             </div>
           </div>
-
           <div class="form-register-format ">
             <form id="register">
               <div class="mb-3">
-                <label for="floatingInput" class="form-label text-body-tertiary">البريد الالكتروني</label>
+                <label for="username" class="form-label text-body-tertiary">الاسم</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  placeholder="حسام جودة"  autocomplete="username" required/>
+                
+              </div>
+              <div class="mb-3">
+                <label for="date" class="form-label text-body-tertiary">تاريخ الميلاد</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="date"
+                  value="1990-01-01" required />
+              </div> 
+              <div class="mb-3">
+                <label for="email" class="form-label text-body-tertiary">البريد الالكتروني</label>
                 <input
                   type="email"
                   class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com" required/>
+                  id="email"
+                  placeholder="name@example.com"  autocomplete="username" minlength="2" required />
               </div>
               <div class="mb-3">
-                <label for="floatingPassword" class="form-label text-body-tertiary">كلمة المرور</label>
+                <label for="password" class="form-label text-body-tertiary">كلمة المرور</label>
                 <input
                   type="password"
                   class="form-control"
-                  id="floatingPassword"
-                  placeholder="كلمة المرور" required/>
+                  id="password"
+                  placeholder="كلمة المرور"  autocomplete="new-password" required/>
               </div>
-              <div class="checkbox mb-3">
-                <label> <input type="checkbox" value="remember-me" class="float-right"/> تذكرني </label>
+              <div class="mb-3">
+                <label for="confirm_password" class="form-label text-body-tertiary" >تأكيد كلمة المرور</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirm_password"
+                  placeholder="تأكيد كلمة المرور"  autocomplete="new-password" required/>
+                  <div class="clearfix"></div>
               </div>
-              <div class="row d-flex flex-sm-column flex-md-row cols-2 custom-register-button">
+
+              <div class="row d-flex flex-sm-column flex-md-row cols-2 custom-register-button w-100 m-auto">
                 <button
                 class="w-50 btn btn-sm btn-primary login-custom-button col m-1"
                 type="submit" id="submit">
-                تسجيل الدخول</button>
+                إنشاء حساب جديد</button>
                 <a
-              class="w-50 btn btn-outline-secondary btn-sm  col"
+              class="w-50 btn btn-outline-secondary btn-sm col"
               href="./login.html">
-              نسيت كلمة المرور ؟</a>
+              هل لديك حساب؟</a>
               </div>
+              
             </form>
 
           </div>
-        </div>
 
+        </div>
+        
       </section>
       <footer class="custom-footer mt-3">
         <div class="container ">

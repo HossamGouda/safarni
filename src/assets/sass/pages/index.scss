@@ -33,7 +33,7 @@
           border: none !important;
           transition: all 1s;
           border-radius: 10px;
-          padding: .5rem 1rem;
+          padding: 0.5rem 1rem;
           &:hover {
             background-color: darken($main-color, 20%) !important;
           }
@@ -49,12 +49,31 @@
     outline: none !important;
     border: none !important;
     transition: all 1s;
-    
 
     &:hover {
       background-color: darken($main-color, 20%) !important;
     }
   }
+  .custom-hero-content {
+    margin-top: 1.5rem;
+    @keyframes myAnimation {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  
+    .masked-image {
+      animation: myAnimation 6s infinite;
+    }
+  
+  .clip-svg {
+      clip-path: url(#svg-shaped_masked_image);
+      -webkit-clip-path: url(#svg-shaped_masked_image);
+      background-position-x: 50%;
+      background-position-y: 50%;
+    }
+  }
+  
 }
 
 .services {
