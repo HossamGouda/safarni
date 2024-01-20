@@ -3,15 +3,13 @@
   background-size: cover;
   background-position: center;
   @include hero-section;
-  
 }
 
-.hero-custom-tour2{
+.hero-custom-tour2 {
   background-image: url("~./../images/slider2/hero-tour-2.jpg");
   background-size: cover;
   background-position: center;
   @include hero-section;
-
 }
 
 .timeline {
@@ -25,7 +23,7 @@
 
     .timeline-icon {
       background: #fff;
-      border: 2px solid $timeline-icon-border-color; // Define $timeline-icon-border-color in your variables
+      border: 2px solid $timeline-icon-border-color;
       display: inline-block;
       border-radius: 50%;
       width: 40px;
@@ -38,7 +36,7 @@
 
       i {
         font-size: 1.2em;
-        color: $timeline-icon-color; // Define $timeline-icon-color in your variables
+        color: $primary;
       }
     }
 
@@ -64,7 +62,7 @@
       .timeline-date {
         display: block;
         margin-top: 10px;
-        color: $timeline-date-color; // Define $timeline-date-color in your variables
+        color: $timeline-date-color;
       }
 
       h4 {
@@ -94,14 +92,14 @@
     .testimonial-name {
       margin-top: 10px;
       font-weight: bold;
-      color: $testimonial-name-color; // Define color in your variables
+      color: $testimonial-name-color;
     }
   }
 }
 
 #booking {
   .border-bottom {
-    margin-bottom: 1.5rem; // Space after heading
+    margin-bottom: 1.5rem;
   }
   #bookingForm {
     input::placeholder,
@@ -119,23 +117,23 @@
   }
 
   form {
-    background: #f9f9f9; // Light background for the form
-    padding: 2rem; // Padding around the form content
-    border-radius: $form-border-radius; // Border radius (variable defined or standard Bootstrap value)
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: $form-border-radius;
 
     .form-label {
       font-weight: bold;
-      color: $form-label-color; // Custom color for the label
+      color: $form-label-color;
       margin-bottom: 0.5rem;
     }
 
     .form-control {
-      border-radius: $input-border-radius; // Radius for input fields
-      border: 1px solid $input-border-color; // Border color for the input
+      border-radius: $input-border-radius;
+      border: 1px solid $input-border-color;
 
       &:focus {
-        border-color: $input-focus-border-color; // Border color on focus
-        box-shadow: $input-focus-box-shadow; // Box-shadow on focus (define or use Bootstrap's variables)
+        border-color: $input-focus-border-color;
+        box-shadow: $input-focus-box-shadow;
       }
     }
 
@@ -150,14 +148,12 @@
     }
 
     .btn-primary {
-      background-color: $primary-btn-bg; // Primary button background color
-      border-color: $primary-btn-border; // Primary button border color
+      background-color: $primary-btn-bg;
+      border-color: $primary-btn-border;
       &:hover {
-        background-color: $primary-btn-hover-bg; // Hover state bg color
-        border-color: $primary-btn-hover-border; // Hover state border color
+        background-color: $primary-btn-hover-bg;
+        border-color: $primary-btn-hover-border;
       }
     }
   }
 }
-
-// Define your color palette and other design tokens

@@ -10,11 +10,10 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); // Black overlay with 50% opacity
-    z-index: 1; // Ensure it sits below the content but above the background image
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
   }
 
-  // Ensure the container is above the overlay
   .container-fluid {
     position: relative;
     z-index: 2;

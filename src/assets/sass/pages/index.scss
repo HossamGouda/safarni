@@ -27,12 +27,11 @@
     }
     .custom-login-btns {
       li {
-        // 'تسجيل الدخول' (Login) button
         &:nth-child(1) a {
           background-color: $primary !important;
           outline: none !important;
           border: none !important;
-          transition: all 0.3s; // Adjusted the duration for a smoother transition
+          transition: all 0.3s; 
           border-radius: 10px;
           padding: 0.5rem 1rem;
           &:hover {
@@ -40,10 +39,9 @@
           }
         }
     
-        // 'إنشاء حساب جديد' (Register) button
         &:nth-child(2) a {
-          background-color: $secondary !important; // Assume $secondary is another defined color
-          color: #fff !important; // Text color set to white for visibility
+          background-color: $secondary !important; 
+          color: #fff !important; 
           outline: none !important;
           border: none !important;
           transition: all 0.3s;
@@ -99,6 +97,9 @@
 
 .services {
   .icon-square {
+    color: $primary !important;
+  }
+  .custom-color{
     color: $primary !important;
   }
 }
