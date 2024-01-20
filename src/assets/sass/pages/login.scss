@@ -8,23 +8,25 @@
   margin: auto;
   form {
     input:focus {
-      box-shadow: inset 0 1px 1px $main-color, 0 0 8px $main-color !important;
+      box-shadow: inset 0 1px 1px $primary, 0 0 8px $primary !important;
     }
     input::placeholder {
       font-weight: bold;
       opacity: 0.4;
-      color: $main-color;
+      color: $primary;
       direction: rtl !important;
+      text-align: right;
+
     }
   }
   .login-custom-button {
-    background-color: $main-color !important;
+    background-color: $primary !important;
     outline: none !important;
     border: none !important;
     transition: all 1s;
 
     &:hover {
-      background-color: darken($main-color, 20%) !important;
+      background-color: darken($primary, 20%) !important;
     }
   }
 
@@ -40,22 +42,22 @@
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    color: $main-color;
-    border: 1px solid darken($main-color, 30%);
+    color: $primary;
+    border: 1px solid darken($primary, 30%);
   }
 
   input[type="date"] {
-    color: $main-color;
+    color: $primary;
   }
   input[type="checkbox"] {
-    accent-color: $main-color;
+    accent-color: $primary;
   }
 }
 
 label.error {
   color: red;
   float: left;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   display: flow-root;
 }
 

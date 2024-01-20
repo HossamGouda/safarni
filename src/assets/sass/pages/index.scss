@@ -9,15 +9,15 @@
         transition-duration: 0.5s;
 
         &:hover {
-          color: $main-color !important;
+          color: $primary !important;
           background-color: $custom-color;
-          border-bottom: 1px solid $main-color;
+          border-bottom: 1px solid $primary;
         }
       }
 
       .active a {
-        color: $main-color !important;
-        border-bottom: 1px solid $main-color;
+        color: $primary !important;
+        border-bottom: 1px solid $primary;
       }
     }
     .navbar-brand {
@@ -27,58 +27,79 @@
     }
     .custom-login-btns {
       li {
+        // 'تسجيل الدخول' (Login) button
         &:nth-child(1) a {
-          background-color: $main-color !important;
+          background-color: $primary !important;
           outline: none !important;
           border: none !important;
-          transition: all 1s;
+          transition: all 0.3s; // Adjusted the duration for a smoother transition
           border-radius: 10px;
           padding: 0.5rem 1rem;
           &:hover {
-            background-color: darken($main-color, 20%) !important;
+            background-color: darken($primary, 20%) !important;
+          }
+        }
+    
+        // 'إنشاء حساب جديد' (Register) button
+        &:nth-child(2) a {
+          background-color: $secondary !important; // Assume $secondary is another defined color
+          color: #fff !important; // Text color set to white for visibility
+          outline: none !important;
+          border: none !important;
+          transition: all 0.3s;
+          border-radius: 10px;
+          padding: 0.5rem 1rem;
+          &:hover {
+            background-color: darken($secondary, 20%) !important;
           }
         }
       }
     }
+    
   }
 }
 
 .hero {
   .hero-custom-button {
-    background-color: $main-color !important;
+    background-color: $primary !important;
     outline: none !important;
     border: none !important;
     transition: all 1s;
 
     &:hover {
-      background-color: darken($main-color, 20%) !important;
+      background-color: darken($primary, 20%) !important;
     }
   }
   .custom-hero-content {
     margin-top: 1.5rem;
     @keyframes myAnimation {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
     }
-  
+
     .masked-image {
       animation: myAnimation 6s infinite;
     }
-  
-  .clip-svg {
+
+    .clip-svg {
       clip-path: url(#svg-shaped_masked_image);
       -webkit-clip-path: url(#svg-shaped_masked_image);
       background-position-x: 50%;
       background-position-y: 50%;
     }
   }
-  
 }
 
 .services {
   .icon-square {
-    color: $main-color !important;
+    color: $primary !important;
   }
 }
 .icon-square {
@@ -94,13 +115,13 @@
 .tour {
   .custom-card-holder {
     a {
-      background-color: $main-color !important;
+      background-color: $primary !important;
       outline: none !important;
       border: none !important;
       transition: all 1s;
 
       &:hover {
-        background-color: darken($main-color, 20%) !important;
+        background-color: darken($primary, 20%) !important;
       }
     }
   }
@@ -109,12 +130,12 @@
 .custom-footer {
   .custom-footer-icons {
     a {
-      color: $main-color;
+      color: $primary;
       margin-left: 5px;
       transition: all 1s;
 
       &:hover {
-        color: darken($main-color, 20%) !important;
+        color: darken($primary, 20%) !important;
       }
     }
   }
@@ -123,7 +144,7 @@
     text-align: right;
   }
   .custom-copy-right {
-    color: $main-color;
+    color: $primary;
   }
 }
 

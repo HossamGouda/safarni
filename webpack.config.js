@@ -113,9 +113,14 @@ module.exports = {
       filename: "tour1.html",
       template: "./src/tour1.html",
     }),
+    new HtmlWebpackPlugin({
+      filename: "tour2.html",
+      template: "./src/tour2.html",
+    }),
     new MiniCssExtractPlugin({
       filename: "assets/css/style.css",
     }),
+
     new CssMinimizerPlugin(),
   ],
 };

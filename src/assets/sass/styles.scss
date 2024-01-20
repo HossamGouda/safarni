@@ -1,10 +1,11 @@
 @import "config/_variables";
 @import "config/_layout";
 @import "config/_colors";
-
+@import "utilities/mixin-hero";
 @import "base/fonts";
 @import "base/global";
 @import "base/typography";
 @import "base/links";
 @import "pages/index";
-@import 'pages/login.scss'
+@import "pages/login.scss";
+@import "pages/tour.scss";

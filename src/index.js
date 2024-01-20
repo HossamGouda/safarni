@@ -9,3 +9,4 @@ import "./assets/js/home.js";
 import "jquery-validation";
 import "jquery-validation/dist/localization/messages_ar.js";
 import "./assets/js/register.js";
+import './assets/js/landing-vaidate.js'

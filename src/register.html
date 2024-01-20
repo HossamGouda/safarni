@@ -12,13 +12,12 @@
   </head>
   <body >
     <div class="container-fluid">
-      <section class="top-menu ">
+      <section class="top-menu">
         <div class="row">
           <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 bg-body-tertiary py-2 fixed-top">
             <div class="container">
               <a href="index.html" class="navbar-brand p-0">
-                <img src="./assets/images/logo/logo.svg" class="custom-brand" alt=" شركة سفرني للسياحة" />
-                سفرني
+                <img src="./assets/images/logo/logo.svg" class="custom-brand" alt=" شعار شركة سفرني" />
               </a>
       
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,9 +28,6 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item active p-2">
                     <a class="nav-link" href="/index.html">الرئيسية</a>
-                  </li>
-                  <li class="nav-item p-2">
-                    <a class="nav-link" href="/about.html">عن الشركة</a>
                   </li>
                   <li class="nav-item p-2">
                     <a class="nav-link" href="/projects.html">خدماتنا</a>
@@ -49,9 +45,7 @@
                   </li>
                   <li class="nav-item p-2">
                     <a 
-                      class="btn btn-outline-secondary btn-lg px-4">
-                      انشاء حساب جديد
-                  </a>
+                      class="btn btn-outline-secondary btn-lg px-4" href="/register.html">انشاءحساب جديد </a>
                   
                   </li>
                 </ul>
@@ -80,7 +74,9 @@
                   type="text"
                   class="form-control"
                   id="username"
-                  placeholder="حسام جودة"  autocomplete="username" required/>
+                  name="username"
+                  placeholder="أدخل اسمك الكامل"
+                  autocomplete="username" required/>
                 
               </div>
               <div class="mb-3">
@@ -89,7 +85,8 @@
                   type="date"
                   class="form-control"
                   id="date"
-                  value="1990-01-01" required />
+                  name="date"
+                  required />
               </div> 
               <div class="mb-3">
                 <label for="email" class="form-label text-body-tertiary">البريد الالكتروني</label>
@@ -97,7 +94,9 @@
                   type="email"
                   class="form-control"
                   id="email"
-                  placeholder="name@example.com"  autocomplete="username" minlength="2" required />
+                  name="email"
+                  placeholder="أدخل بريدك الإلكتروني"
+                  autocomplete="username" />
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label text-body-tertiary">كلمة المرور</label>
@@ -105,6 +104,7 @@
                   type="password"
                   class="form-control"
                   id="password"
+                  name="password"
                   placeholder="كلمة المرور"  autocomplete="new-password" required/>
               </div>
               <div class="mb-3">
@@ -113,6 +113,7 @@
                   type="password"
                   class="form-control"
                   id="confirm_password"
+                  name="confirm_password"
                   placeholder="تأكيد كلمة المرور"  autocomplete="new-password" required/>
                   <div class="clearfix"></div>
               </div>
