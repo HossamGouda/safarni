@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve --mode development",
-    "create": "node src/scripts/create.js"
+    "create": "node src/scripts/create.js",
+    "deploy": "gh-pages -d dist -f"
   },
   "author": "Hossam Gouda",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "css-minimizer-webpack-plugin": "^5.0.1",
     "expose-loader": "^4.1.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "html-loader": "^4.2.0",
     "html-webpack-partials-plugin": "^0.8.0",
     "html-webpack-plugin": "^5.6.0",
